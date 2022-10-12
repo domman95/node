@@ -8,8 +8,8 @@ app.get("/", (req, res) => {
 
 console.log(`---------> PORT: ${process.env.port}`);
 
-const PORT = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
+app.listen(port, () => {
     console.log(`🚀 Your server is running on: ${PORT}`);
 });
